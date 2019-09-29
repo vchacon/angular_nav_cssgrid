@@ -1,0 +1,70 @@
+
+/** Variables & Mixins **/
+$bar-height: 30px;
+$primary-color: #333;
+
+.page {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-rows: 100px 30px 1fr 30px;
+  grid-template-rows: 100px 30px 1fr 30px;
+  -ms-grid-columns: 100px 1fr;
+  grid-template-columns: 100px 1fr;
+  height: 100vh;
+  overflow-y: hidden;
+}
+
+.sidebar {
+  -ms-grid-row: 3;
+  grid-row: 3;
+  -ms-grid-column: 1;
+  grid-column: 1;
+  border: 1px solid yellowgreen;
+  background-color: bisque;
+}
+
+.editor {
+  -ms-grid-row: 3;
+  grid-row: 3;
+  -ms-grid-column: 2;
+  grid-column: 2;
+  border: 1px solid blue;
+  overflow-y: auto;
+  background-color: gray;
+}
+
+.footer {
+  -ms-grid-column-span: 2;
+  -ms-grid-column: 1;
+  grid-column-start: 1;
+  grid-column-end: 3;
+  -ms-grid-row: 4;
+  grid-row: 4;
+  border: 1px solid magenta;
+}
+
+.content {
+  height: 600px;
+  width: 400px;
+  border: 1px solid gold;
+}
+
+.header {
+  -ms-grid-column-span: 2;
+  -ms-grid-column: 1;
+  grid-column-start: 1;
+  grid-column-end: 3;
+  -ms-grid-row: 1;
+  grid-row: 1;
+  border: 1px solid blue;
+}
+
+.subheader {
+  -ms-grid-column-span: 2;
+  -ms-grid-column: 1;
+  -ms-grid-row: 2;
+  grid-column-start: 1;
+  grid-column-end: 3;
+  grid-row: 2;
+  border: 1px solid orange;
+}
